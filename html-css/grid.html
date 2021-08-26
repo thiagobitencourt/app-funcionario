@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-layout {
+      margin: 30px;
+      border: 1px solid #737373;
+      height: 80vh;
+      /* width: 900px; */
+      
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr 2fr 2fr; */
+      /* grid-template-columns: repeat(3, 1fr) 2fr 2fr; */
+      /* grid-template-columns: repeat(3, 1fr) repeat(2, 2fr); */
+      gap: 10px;
+
+      /* grid-template-columns: repeat(3, 1fr); */
+
+      /* grid-template-columns: 1fr minmax(100px, 200px) 1fr; */
+
+      /* grid-template-columns: repeat(5, minmax(100px, 1fr)); */
+
+      /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+
+      /* justify-content: center; */
+      /* align-content: center; */
+    }
+
+    /* .grid-layout div {
+      width: 50px;
+    } */
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="grid-layout">
+
+    <div style="background-color: yellow;"></div>
+    <div style="background-color: greenyellow;"></div>
+    <div style="background-color: teal;"></div>
+
+    <div style="background-color: turquoise;"></div>
+    <div style="background-color: wheat;"></div>
+  </div>
+  
+</body>
+</html>

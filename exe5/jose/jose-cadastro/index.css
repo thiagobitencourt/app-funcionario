@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to bottom, rgb(162, 152, 177), #ad7f7f); 
+    height: 100vh;
+}
+
+main {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+form {
+    font-size: 1.5rem;
+}
+
+.div_inputs{
+    display: flex; 
+    justify-content: space-between; 
+    width: 100vw
+}
+
+fieldset {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around; 
+    width: 25rem; 
+    height: 30rem; 
+    margin-bottom: 1.25rem; 
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+fieldset:hover {
+    background-color: rgb(162, 152, 177);
+    transition: 0.2s;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], 
+input[type="number"], input[type="color"], 
+input[type="email"], input[type="tel"], 
+input[type="date"],input[type="mounth"],
+input[type="url"], select{
+    width: 20rem; 
+    height: 2rem; 
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    width: 20rem; height: 2rem; font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 1.5rem; height: 1.5rem
+}
+
+button {
+    width: 10rem; height: 2rem; font-size: 1.5rem; margin: 0 350px 0 350px;
+    background-color: rgb(162, 152, 177);
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #080808;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+button:hover {
+    background-color: #ad7f7f;
+    transition: 0.2s;
+}

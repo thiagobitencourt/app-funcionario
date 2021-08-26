@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .conteudo {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    .menu {
+      background-color: cornflowerblue;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 10fr;
+      height: 100vh;
+    }
+
+    .icone-menu {
+      display: none;
+      background-color: #ffffff;  
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
+    .icone-menu img {
+      width: 20px;
+      height: auto;
+    }
+
+    /* MOBILE */
+    @media screen and (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .icone-menu {
+        display: block;
+      }
+    }
+
+
+    section {
+      width: 100vw;
+      height: 300px;
+    }
+
+    section span {
+      background-color: purple;
+      color: purple;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    section span:hover {
+      background-color: plum;
+      color: plum;
+    }
+
+    section {
+      position: relative;
+    }
+
+    section div {
+      position: absolute;
+      top: 25px;
+      left: 100px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="icone-menu">
+    <img src="../assets/squared-menu.png" alt="Menu">
+  </div>
+
+  <main>
+    <div class="menu">
+      Outro texto
+    </div>
+
+    <div class="conteudo">
+      Um texto qualquer
+    </div>
+  </main>
+
+  <section>
+    <img src="../assets/elonmusk.jpeg" alt="">
+    <div>
+      <span>11</span>
+      <span>22</span>
+      <span>33</span>
+      <span>44</span>
+    </div>
+  </section>
+
+
+  
+</body>
+</html>

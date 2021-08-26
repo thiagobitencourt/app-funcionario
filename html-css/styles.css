@@ -1,0 +1,43 @@
+body {
+  background-color: gray;
+  color: white;
+}
+
+footer {
+  background-color: teal;
+}
+
+header {
+  background-color: teal;
+}
+
+
+/* header > h3 {
+  color: greenyellow;
+}
+*/
+
+header h3,
+footer p.direitos
+{
+  color: rgb(4 66 9 / 50%);
+}
+
+.corpo-noticia > h4 ~  {
+  background-color: khaki;
+  color: lavender;
+}
+
+.titulo-noticia:hover {
+  background-color: white;
+  color: gray;
+}
+
+header input[type="search"]:focus {
+  border: 2px solid red;
+}
+
+mark {
+  background-color: rgb(236, 44, 211);
+  color: #faf06a;
+}

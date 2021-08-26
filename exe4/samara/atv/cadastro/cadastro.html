@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Usuário</title>
+</head>
+<body>
+    <form action="../cadastro/compl/usuariocadastrado.html">
+        <h2>Cadastro Inteligente</h2>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id= "nome" name="nome" autofocus pattern="[a-zA-Z]+" required>
+            </p>
+            <p>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id= "sobrenome" name="sobrenome" pattern="[a-zA-Z]+">
+            </p>
+            <p>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" id= "data" name="data" required>
+            </p>
+            <p>
+                Sexo:
+                <div>
+                    <input type="radio" id="f">
+                    <label for="f">Feminino </label>
+                </div>
+                <div>
+                    <input type="radio" id="m">
+                    <label for="m">Masculino </label>
+                </div>
+                <div>
+                    <input type="radio" id="o">
+                    <label for="o">Outro </label>
+                </div>
+                <div>
+                    <input type="radio" id="n">
+                    <label for="n">Prefiro não informar </label>
+                </div>
+            </p>
+            <p>
+                <label for="foto">Insira uma foto para o seu perfil:</label>
+                <input type="file" id= "foto" name="foto">
+            </p>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>
+                <label for="end">Endereço:</label>
+                <input type="text" id= "end" name="endereco" required>
+            </p>       
+            <p>
+                <label for="num">Número da Casa:</label>
+                <input type="number" id= "num" name="numerocasa">
+            </p>
+            <p>
+                <label for="comp">Complemento:</label>
+                <input type="text" id= "comp" name="complemento">
+            </p>
+            <p>
+                Cidade:
+                <select>
+                    <option value="POA">Imbituba</option>
+                    <option value="LAG" selected>Laguna</option>
+                    <option value="PB" selected>São José</option>
+                    <option value="CA" selected>Tubarão</option>
+                    <option value="CAM" selected>Garopaba</option>
+                    <option value="BH" selected>Gaspar</option>
+               </select>
+            </p>
+            <p>
+                <label for="est">Estado:</label>
+                <input type="text" id= "est" name="estado" readonly value="Santa Catarina">
+            </p>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Contato</legend>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" id= "tel" name="telefone" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id= "email" name="telefone">
+            </p>
+            <p>
+                <label for="site">Site Pessoal:</label>
+                <input type="url" id= "site" name="site">
+            </p>
+            <p>Selecione as formas de receber informações de promoção:</p>
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cb">Email</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cba">SMS</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cbb">Correio</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cbc">Whatsapp</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cbd">Telegram</label>
+            </div>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Informações para login</legend>
+                <p>
+                    <label for="nome">Nome de Usuário:</label>
+                    <input type="text" id= "nome" name="nome">
+                </p>
+                <p>
+                    <label for="pass">Senha:</label>
+                    <input type="password" id= "pass" name="senha">
+                </p>
+                <p>
+                    <label for="passw">Repetir Senha:</label>
+                    <input type="password" id= "passw" name="senharepetida">
+                </p>
+                <p>
+                    <b>Termos de Uso:</b>
+                    <ul> 
+                        <li><a href="../cadastro/compl/termos.html" target="_blank">Termos de Uso</a></li>
+                    </ul>
+            <div>
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Eu li e aceito todos os termos de uso</label>
+            </div>
+            </fieldset>
+        <br />
+        <fieldset>
+            <legend>Opções de Preferência</legend>
+            <p>
+                Preencha as opções de acordo com sua preferência:
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="color" id= "cor" name="cor">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="mescompra">Mês de compra:</label>
+                    <input type="month" id= "mescompra" name="mesCompra">
+                </div>
+            </p>
+            <p>
+                <div>
+                    Produtos:
+                </div>
+                <div>
+                    <input type="checkbox" id="p1">
+                    <label for="p1">Higiene</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p2">
+                    <label for="p2">Brinquedos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p3">
+                    <label for="p3">Eletrodomésticos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p4">
+                    <label for="p4">Limpeza</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p5">
+                    <label for="p5">Alimentos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p6">
+                    <label for="p6">Eletrônicos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p7">
+                    <label for="p7">Cama, Mesa e  Banho</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p8">
+                    <label for="p8">Ferramentas</label>
+                </div>
+            </p>
+        </fieldset>
+        <button>Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>

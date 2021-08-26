@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAGs Semânticas</title>
+</head>
+<body>
+  <header>
+    <div>
+      icone de menu
+      logo
+      img do usuario
+      busca
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://g1.globo.com/" target="_blank">g1</a>
+        </li>
+        <li>
+          <a href="./lista.html" target="_blank">Listas</a>
+        </li>
+        <li>
+          <a href="./exe1/jose.html">Exercício</a>
+        </li>
+        <li>
+          <a href="../tarde/exe1/deivity-andrade.html">Exercício da tarde</a>
+        </li>
+        <li>
+          <a href="#directive">Seção da mesma página</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--
+      <nav></nav>
+      <article>
+        <header></header>
+        <article></article>
+        <footer></footer>
+      </article>
+
+      <section>
+        <header></header>
+        <article></article>
+        <footer></footer>
+      </section>
+
+      <footer></footer>
+    -->
+
+    <aside>
+      <p>Conteúdo que ocupa uma das laterais da página</p>
+    </aside>
+
+    <article>
+      <section>
+        <h2>Titulo do artigo</h2>
+        <div>
+          <img src="" alt="">
+          <span>Fulano de tal</span>
+          <span>17, Ago 2021 - <time>15:20</time></span>
+        </div>
+        <nav>
+          <a href="">twitter</a>
+          <a href="">insta</a>
+          <a href="">face</a>
+        </nav>
+      </section>
+
+      <section>
+        <h2>Polluting the ngOnInit</h2>
+        <p>
+          <b>ngOnInit</b> may be the most important lifecycle hook in Angular components; it is used to initialize data, setup some listeners, create connections and so on. But sometimes this may make our lifecycle hook too overwhelming:
+        </p>
+
+        <code>
+          @Component({
+            selector: 'some',
+            template: 'template',
+          })
+          export class SomeComponent implements OnInit, OnDestroy {
+            @ViewChild('btn') buttonRef: ElementRef<HTMLButtonElement>;
+            form = this.formBuilder.group({});
+        </code>
+
+        <p>
+          Take a look at this component.
+          It does not have very many methods — actually, 
+          it has only two lifecycles. But the ngOnInit 
+          method is, frankly speaking, terrifying. 
+          It subscribes to different form change events
+        </p>
+
+      </section>
+
+      <section id="directive">
+        <h2>Writing useless directive selectors</h2>
+
+        <p>Angular directives are a powerful tool which allows us to apply custom logic to different HTML elements. In doing so, we utilize css selectors, which actually gives us way more power than we care to realize</p>
+
+      </section>
+
+      <footer>
+        <div>
+          ... icones de curtir, compartilhar e etc
+        </div>
+        <div>
+          Comentários
+        </div>
+      </footer>
+
+    </article>
+
+
+    <!-- <main></main>
+    <section></section>
+    <aside></aside>
+    <article></article> -->
+  </main>
+
+  <footer>
+    <hr />
+    <h5>Página criada pelos jovens talentos da Trier</h5>
+    <p>Ultima atualização em 17/08/2021 - <time>08:42</time></p>
+
+    <nav>
+      <b>Redes sociais</b>
+      <ol>
+        <li>
+          <a href="https://linkedin.com">LinkedIn</a>
+        </li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Youtube</li>
+        <li>GitHub</li>
+        <li>Por ai vai...</li>
+      </ol>
+    </nav>
+
+  </footer>
+
+</body>
+</html>

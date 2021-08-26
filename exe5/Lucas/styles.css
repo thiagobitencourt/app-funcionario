@@ -1,0 +1,12 @@
+table#tabela{
+    border: 2px solid #f1f0f0;
+    border-spacing: 0px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+    padding: 10px;
+}
+
+table#tabela td{
+    padding: 7px;
+}

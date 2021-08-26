@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset.css">
+</head>
+
+<style>
+  /*
+  h1#titulo-principal {
+    color: red;
+  } 
+  */
+
+  /* h1.azul {
+    color: green;
+  } */
+
+  .azul {
+    color: white;
+    background-color: blue;
+  }
+
+  .amarelo {
+    background-color: yellow;
+  }
+
+  .caixa {
+    border: dotted;
+    /* margin: 30px; */
+    
+    /*
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin-right: 50px;
+      margin-left: 100px;
+    */
+
+    /* top e bottom - right e left */
+    /* margin: 50px 30px; */
+
+    /* Um só valor, vale para os quatro lados */
+    /* margin: 20px; */
+
+    /* top, right, bottom, left - valores separados por espaço */
+    /* margin: 10px 30px 50px 20px; */
+
+    /*
+    margin-top: 15px;
+    margin-bottom: 15px;
+    */
+
+    margin: 20px 0px;
+  }
+
+  .caixa-3 {
+    margin-left: 10px;
+    border: solid;
+    border-color: violet;
+    border-width: 5px;
+    border-radius: 15px;
+
+    border: 10px double green;
+
+    height: auto;
+    width: 100vw;
+
+    /* border-radius: 50%; */
+  }
+
+  .espaco-interno {
+    /* Espaçamento interno - entre a borda e o conteúdo do elemento */
+
+    /* Aplica o mesmo valor de padding para todos os lados o box/caixa */
+    /* padding: 10px; */
+
+    /* padding-right: 100px; */
+    /* padding: 10px 20px; */
+
+    /* Sentido horário */
+    padding: 10px 30px 15px 0px;
+  }
+
+
+  .noticias .noticia {
+    /* border: 1px solid #525252; */
+    border-radius: 5px;
+    margin: 30px;
+
+    box-shadow: 3px 3px 10px #CCC;
+
+    min-height: 100px;
+  }
+
+  .noticia:first-child {
+    position: relative;
+    left: 55px;
+    /* top: -80px; */
+  }
+
+  .noticia h2 span {
+    color: white;
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+
+  .noticia h2 {
+    background-color: #525252;
+    color: #ccc;
+    margin: 0;
+    padding: 10px;
+
+    /*
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    */
+    border-radius: 5px 5px 0 0;
+  }
+
+  .noticia p {
+    padding-left: 15px;
+  }
+
+  #imagem-fundo {
+    height: 80px;
+    background-image: url("https://s2.glbimg.com/AMfiQoHx_KDkNYI52QoqZC1TDVs=/540x304/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/i/l/pohUsESB6aBQvYjbigPQ/var.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .posicao-relativa span {
+    position: relative;
+
+    /* top, bottom, right, left */
+    /* top: 10px; */
+    /* left: 50px; */
+    /* right: 10px; */
+  }
+
+  .noticia-urgente {
+    background-color: red;
+    color: white;
+    width: 300px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .posicionamento-sticky {
+    position: sticky;
+    top: 30px;
+    left: 0;
+  }
+
+  a {
+    /* text-decoration: none; */
+    color: red;
+    letter-spacing: 3px;
+  }
+  /*
+
+  a:hover {
+    text-decoration: overline;
+  } */
+
+  a:visited {
+    color: green;
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  .presa {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+
+  .presa {
+    background-color: white;
+  }
+
+  .boxmodel-linha {
+    margin: 30px;
+    padding: 30px;
+
+    display: block;
+  }
+
+  .noticia p {
+    text-indent: 25px;
+  }
+
+</style>
+
+<body>
+  
+  <a href="http://medium.com">Outra página</a>
+  <a href="http://globo.com">Outra página</a>
+
+
+  <h1 class="azul amarelo">Titulo da página aqui</h1>
+  <hr />
+
+  <div class="posicionamento-sticky">
+    <h1 class="azul amarelo">Outro titulo aqui</h1>
+  </div>
+
+
+  <div class="caixa">
+    Div 1
+  </div>
+
+  <div class="noticia caixa espaco-interno">
+    <p>Div 2</p>
+    <p>Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+    </p>
+
+    <p>Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+    </p>
+
+    <p>Paragrafo 3 -
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+      Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2 Paragrafo 2
+    </p>
+  </div>
+
+  <div class="escondida caixa caixa-3">
+    Div 3
+  </div>
+
+  <!-- <div class="noticia-urgente">
+    <h3>Titulo da noticia</h3>
+    <p>Resumo da noticia</p>
+  </div> -->
+
+  <div class="noticias">
+    <div class="noticia paragrafo-linha">
+      <h2 id="imagem-fundo">
+        <span>
+          Notícia
+        </span>
+      </h2>
+      <p>Resumo da noticia</p>
+      <p class="posicao-relativa">
+        <span>
+          RESUMO DA NOTICIA
+        </span>
+      </p>
+      <p>Resumo da noticia</p>
+      <p>Resumo da noticia</p>
+      <p>Resumo da noticia</p>
+      <p>Resumo da noticia</p>
+    </div>
+
+    <div class="noticia">
+      <h2>Notícia</h2>
+      <p>Resumo da noticia</p>
+    </div>
+
+    <div class="noticia presa">
+      <h2>Notícia</h2>
+      <p>Resumo da noticia</p>
+    </div>
+  </div>
+
+</body>
+</html>

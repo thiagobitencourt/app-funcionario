@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif; background-color: rgb(205, 215, 224);">
+    <main style="display: flex; flex-direction: column; align-items: center;">
+
+        <h1>Cadastro de Cliente</h1>
+
+        <form style="font-size: 1.5rem; ">
+            <div style="display: flex; justify-content: space-between; width: 100vw">
+                <fieldset
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; width: 25rem; height: 30rem; margin-bottom: 1.25rem;">
+                    <legend style="font-weight: bold;">Dados pessoais</legend>
+
+                    <input type="hidden" value="123">
+
+                    <input type="text" name="nome" placeholder="Nome"
+                        style="width: 20rem; height: 2rem; font-size: 1.5rem;" required autofocus>
+                    <input type="text" name="sobrenome" placeholder="Sobrenome"
+                        style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+
+                    <input type="date" name="nascimento" style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+
+                    <input type="number" name="idade" min="18" placeholder="Idade"
+                        style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+
+                    <section style="display: flex; align-items: center;">
+                        <div style="margin-right: 1rem;">
+                            <input type="radio" name="sexo" id="m" style="width: 1.5rem; height: 1.5rem">
+                            <span for="m">Masculino</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="f" style="width: 1.5rem; height: 1.5rem">
+                            <span for="f">Feminino</span>
+                        </div>
+                    </section>
+
+                    <input type="file" name="fotoperfil" style="width: 20rem; height: 2rem; font-size: 1rem;">
+                </fieldset>
+
+                <fieldset
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; width: 25rem; height: 30rem; margin-bottom: 1.25rem;">
+                    <legend style="font-weight: bold;">Endereço</legend>
+
+                    <input type="text" placeholder="Endereço" style="width: 20rem; height: 2rem; font-size: 1.5rem;"
+                        required>
+                    <input type="number" placeholder="Nº da casa" style="width: 20rem; height: 2rem; font-size: 1.5rem;"
+                        required>
+                    <input type="text" placeholder="Copmlemento" style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+
+                    <select style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+                        <option selected>Selicione a cidade</option>
+                        <option>Imbituba</option>
+                        <option>Tubarão</option>
+                        <option>Garopaba</option>
+                    </select>
+
+                    <input type="text" placeholder="Estado" style="width: 20rem; height: 2rem; font-size: 1.5rem;"
+                        readonly>
+                </fieldset>
+
+                <fieldset
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; width: 25rem; height: 30rem; margin-bottom: 1.25rem;">
+                    <legend style="font-weight: bold;">Contato</legend>
+
+                    <input type="tel" placeholder="Telefone" style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+                    <input type="email" placeholder="E-mail" style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+                    <input type="url" placeholder="Site pessoal" style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+
+                    <section style="display: flex; flex-direction: column;">
+                        <div>
+                            <input type="checkbox" style="width: 1.5rem; height: 1.5rem; margin-left: auto;">
+                            <span>Telefone</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" style="width: 1.5rem; height: 1.5rem; margin-left: auto;">
+                            <span>E-mail</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" style="width: 1.5rem; height: 1.5rem; margin-left: auto;">
+                            <span>SMS</span>
+                        </div>
+                    </section>
+                </fieldset>
+
+                <fieldset
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; width: 25rem; height: 30rem; margin-bottom: 1.25rem;">
+                    <legend style="font-weight: bold;">Informações de login</legend>
+
+                    <input type="text" name="usuario" placeholder="Usuário"
+                        style="width: 20rem; height: 2rem; font-size: 1.5rem;" required>
+
+                    <input type="password" name="senha1" placeholder="Senha"
+                        style="width: 20rem; height: 2rem; font-size: 1.5rem;" required>
+
+                    <input type="password" name="senha2" placeholder="Repita a senha"
+                        style="width: 20rem; height: 2rem; font-size: 1.5rem;" required>
+
+                    <section style="display: flex; align-items: center;">
+                        <div style="margin-right: 1rem;">
+                            <input type="checkbox" name="termos" id="t" style="width: 1.5rem; height: 1.5rem">
+                            <span for="t">Termos de uso</span>
+                        </div>
+                    </section>
+                </fieldset>
+
+                <fieldset
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; width: 25rem; height: 30rem; margin-bottom: 1.25rem;">
+                    <legend style="font-weight: bold;">Preferências</legend>
+
+                    <div style="display: flex; align-items: center; flex-direction: column;">
+                        <label>Cor predileta</label>
+                        <input type="color" name="cor" placeholder="Cor predileta"
+                            style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+                    </div>
+
+                    <section style="display: flex; flex-direction: column;">
+                        <div>
+                            <input type="checkbox" style="width: 1.5rem; height: 1.5rem">
+                            <span>Bebida e comida</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" style="width: 1.5rem; height: 1.5rem">
+                            <span>Roupas</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" style="width: 1.5rem; height: 1.5rem">
+                            <span>Aparelhos eletronicos</span>
+                        </div>
+                    </section>
+                    <div style="display: flex; align-items: center; flex-direction: column;">
+                        <label>Preferencia de compra em: </label>
+                        <input type="month" name="mes" placeholder="mes"
+                            style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <div style="display: flex; flex-direction: row; align-items: stretch; justify-content: space-around; width: 100vw;">
+                <button type="reset" style="width: 10rem; height: 2rem; font-size: 1.5rem; margin-left: 350px;">Limpar</button>
+                <button type="submit" style="width: 10rem; height: 2rem; font-size: 1.5rem;margin-right: 350px;"><a href="sucesso.html"
+                        style="text-decoration: none; color: #000">Salvar</a></button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

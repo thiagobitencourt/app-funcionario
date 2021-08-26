@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário HTML</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+
+  <form name="usuario" action="./usuario-cadastrado.html" autocomplete="off" target="_blank">
+
+    <fieldset>
+      <legend>Informações pessoais</legend>
+
+      <p>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" pattern="[a-zA-Z0-9]+" name="nomecompleto" placeholder="Informe o seu nome" maxlength="20">
+      </p>
+
+      <p>
+        <label for="sobrenome">Sobrenome</label>
+        <input id="sobrenome" type="text" name="sobrenome" placeholder="Informe o sobrenome" maxlength="20" required>
+      </p>
+
+      <p hidden>
+        <label for="password">Senha</label>
+        <input id="password" type="hidden" name="senha" value="senhapadrao" maxlength="20" required>
+      </p>
+
+
+      <p>
+        <label for="idade">Idade</label>
+        <input id="idade" type="number" name="idadedosujeito" placeholder="Informe a sua idade" min="18" max="110">
+      </p>
+    </fieldset>
+
+    <button>Salvar</button>
+    <button type="reset">Limpar</button>
+    <button type="button">Botão</button>
+  </form>
+  
+</body>
+</html>
+

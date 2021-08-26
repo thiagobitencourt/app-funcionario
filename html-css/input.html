@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campos de input de dados</title>
+</head>
+<body>
+  <h3>Input</h3>
+  <fieldset>
+    <legend>Campos de input</legend>
+
+    <div>
+      <label for="texto">Informe o seu nome: </label>
+      <!-- <span>Informe o seu nome: </span> -->
+      <input id="texto" type="text" placeholder="Coloque aqui o seu nome" value="Fulano de tal">
+    </div>
+
+    <div>
+      <label for="cidade">Selecione uma cidade</label>
+      <select id="cidade">
+        <option value="">Selecione uma cidade</option>
+        <option value="TB">Tubarão</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="POA">Pato Alegre</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <hr />
+  
+  <fieldset>
+    <legend>Email</legend>
+    <p>
+      <label for="email">Escreva o email: </label>
+    </p>
+    <textarea name="" id="email" cols="50" rows="5" autofocus></textarea>
+    
+    <div>
+      <button>Enviar</button>
+      <input type="button" value="Clique aqui">
+    </div>
+  </fieldset>
+
+
+  <fieldset>
+    <label for="input-datalist">Input datalist</label>
+    <input id="input-datalist" list="estados">
+    <datalist id="estados">
+      <option value="Santa Catarina">
+      <option value="Paraná">
+      <option value="Rio Grande do Sul">
+      <option value="Sao Paulo"></option>
+      <option value="Santo Antonio"></option>
+    </datalist>
+  </fieldset>
+
+  <h3>tipos de input</h3>
+
+  <p>Hidden: </p>
+
+  <input type="hidden" value="18/09/2021">
+  <input type="image" src="../assets/github.jpg">
+  <input type="range" value="50">
+
+  <div>
+    <p>
+      <input id="f" type="radio" value="f" name="sexo">
+      <label for="f">Feminino</label>
+    </p>
+    
+    <p>
+      <input id="m" type="radio" value="m" name="sexo">
+      <label for="m">Masculino</label>
+    </p>
+
+    <p>
+      <input id="o" type="radio" value="o" name="sexo">
+      <label for="o">Outro</label>
+    </p>
+  </div>
+
+  <div>
+    <p>
+      <input id="whatsapp" type="checkbox" name="contato">
+      <label for="whatsapp">whatsapp</label>
+    </p>
+
+    <p>
+      <input id="sms" type="checkbox" name="contato">
+      <label for="sms">SMS</label>
+    </p>
+  </div>
+
+  <input type="text" name="name" value="seunomedeusuarioaqui" disabled>
+  <input type="password" name="password" value="suasenhavaiaqui" autocomplete="off">
+
+
+  <hr/>
+  <input type="file" placeholder="Selecione um arquivo" multiple>
+
+  <div>
+    <label for="idade">Idade</label>
+    <input id="idade" type="number" min="18" max="110" required>
+  </div>
+
+
+</body>
+</html>

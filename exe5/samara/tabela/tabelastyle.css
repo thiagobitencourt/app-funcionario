@@ -1,0 +1,35 @@
+body {
+    background-color: rgba(168, 241, 219, 0.664);
+    margin-top: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+table, td, th, tfoot {
+    border:solid 1px rgb(151, 83, 51); 
+    padding:5px;
+}
+     
+tr {
+    background-color: rgb(253, 253, 253);
+    color: rgb(150, 41, 87);
+}
+
+th {
+    background-color: rgb(255, 227, 240);
+}
+
+.titulo, .rodape {
+    color:black;
+}
+
+table {
+    background-color: rgb(250, 168, 236);
+    text-align: center;
+    margin: 0 auto;
+}
+
+ h2 {
+     margin: center;
+}
+
+

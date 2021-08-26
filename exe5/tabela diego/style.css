@@ -1,0 +1,27 @@
+table {
+  border: #dddddd solid 2px;
+}
+
+thead {
+  background-color: black;
+}
+
+th {
+  padding: 5px 10px;
+}
+
+tr {
+  border: none;
+  background-color: #dddddd;
+  padding: 5px;
+  width: 120px;
+}
+
+td {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+tfoot {
+  height: 25px;
+}

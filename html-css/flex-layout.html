@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    header {
+      height: 20vh;
+      background-color: blanchedalmond;
+    }
+
+    footer {
+      height: 20vh;
+      background-color: #ccc;
+    }
+
+    aside {
+      width: 20vw;
+      height: 100%;
+      background-color: yellowgreen;
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      background-color: turquoise;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      height: 100%;
+      display: flex;
+    }
+    
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+
+    <div class="content">
+      <aside>Aside</aside>
+      <main>Main</main>
+      <aside>Aside</aside>
+    </div>
+
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

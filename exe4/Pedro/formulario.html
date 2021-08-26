@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cadastro Cliente</title>
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+<form action="sucesso.html" target="_blank">
+    <fieldset>
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Primeiro Nome</label>
+                <input id="nome" type="text" required maxlength="30" autofocus>
+            </p>
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text">
+            <p> 
+                <label for="data-nascimento">Data Nascimento</label>
+                <input type="date" required>
+            </p>  
+                <label for="idade">Idade</label>
+                <input type="number" required min="18" max="100">
+            <div>
+                <h3>Sexo</h3>
+                </p>
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" value="masculino" required>
+                <p>
+                </p>
+                    <label for="sexo">Feminino</label>
+                    <input type="radio" name="sexo" value="feminino">
+                </p> 
+                <p>
+                    <label for="sexo">Outro</label>
+                    <input type="radio" name="sexo" value="outro">
+                </p>
+            </div>
+            <p>
+                <label for="foto-perfil">Foto de Perfil</label>
+                <input type="file">
+            </p>
+        </fieldset>
+
+        <fieldset>
+        <legend>Endereço</legend>
+            <p>
+                <label for="endereco">Endereço</label>
+                <input type="adress" required>
+            </p>
+
+            <p>
+                <label for="numero-casa">Numero da Casa</label>
+                <input type="number">
+            </p>
+
+            <p>
+                <label for="complemento">Complemento</label>
+                <input type="text">
+            </p>
+
+            <p>
+                <label for="cidade">Cidade</label>
+                <input list="cidades">
+                <datalist id="cidades">
+                    <option value="Tubarão">
+                    <option value="Florianopolis">
+                    <option value="São Paulo">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="estado">Estado</label>
+                <select name="estado">
+                    <option name="estado" value="mock" selected>Selecione um Estado</option>
+                    <option name="estado" value="Santa Catarina">Santa Catarina</option>
+                    <option name="estado" value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option name="estado" value="Sao Paulo">Sao Paulo</option>
+                </select>    
+            </p>
+        </fieldset>
+
+        <fieldset>
+        <legend>Contato</legend>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email">
+            </p>
+                <label for="site">Site Pessoa</label>
+                <input type="url">
+            <p>
+                <input type="checkbox" name="promocao">Deseja receber promocoes?</input>
+            <p>
+                <input type="checkbox" name="email">Deseja receber emails?</input>
+            </p>    
+        </fieldset>
+
+        <fieldset>
+        <legend>Login</legend>
+            <p>
+                <label for="nome">Nome de Usuario</label>
+                <input type="text">
+            </p>
+            <p>
+                <label for="senha">Senha</label>
+                <input type="password">
+            </p>
+            <p>
+                <label for="senha">Repita a Senha</label>
+                <input type="password">
+            </p>
+            <p>
+                <input type="checkbox" name="termos" required>Aceita os termos de uso?</input>
+            </p>
+        </fieldset>
+
+        <fieldset>
+        <legend>Preferencias</legend>
+            <p>
+                <label for="color">Sua Cor Favorita</label>
+                <input type="color">
+            </p> 
+            <p>
+                <label for="itens">Quais Itens mais gosta de comprar?</label>
+                <input type="checkbox" name="item1">Cenoura</input>
+                <input type="checkbox" name="item2">Ovo</input>
+                <input type="checkbox" name="item3">Chocolate</input>
+                <input type="checkbox" name="item4">Laranja</input>
+                <input type="checkbox" name="item5">Tomate</input>
+            </p>
+            <p>
+                <label for="mes">Qual mes do ano mais gosta de fazer compras?</label>
+                <input type="month">
+            </p>
+        </fieldset>
+    </fieldset>
+    <button type="submit">Salvar</button>
+    <button type="reset">Limpar</button>
+</form>
+
+
+
+</body>
+</html>

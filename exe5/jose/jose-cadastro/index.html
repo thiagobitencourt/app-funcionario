@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body class='body'>
+    <main>
+        <h1>Cadastro de Cliente</h1>
+        <form>
+            <div class="div_inputs">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <input type="hidden" value="123">
+
+                    <input type="text" name="nome" placeholder="Nome" required autofocus>
+                    <input type="text" name="sobrenome" placeholder="Sobrenome">
+
+                    <input type="date" name="nascimento">
+
+                    <input type="number" name="idade" min="18" placeholder="Idade">
+
+                    <section style="display: flex; align-items: center;">
+                        <div style="margin-right: 1rem;">
+                            <input type="radio" name="sexo" id="m">
+                            <span for="m">Masculino</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="f">
+                            <span for="f">Feminino</span>
+                        </div>
+                    </section>
+
+                    <input type="file" name="fotoperfil">
+                </fieldset>
+
+                <fieldset>
+                    <legend style="font-weight: bold;">Endereço</legend>
+
+                    <input type="text" placeholder="Endereço" required>
+                    <input type="number" placeholder="Nº da casa"required>
+                    <input type="text" placeholder="Copmlemento">
+
+                    <select>
+                        <option selected>Selicione a cidade</option>
+                        <option>Imbituba</option>
+                        <option>Tubarão</option>
+                        <option>Garopaba</option>
+                    </select>
+
+                    <input type="text" placeholder="Estado"readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend style="font-weight: bold;">Contato</legend>
+
+                    <input type="tel" placeholder="Telefone">
+                    <input type="email" placeholder="E-mail">
+                    <input type="url" placeholder="Site pessoal">
+
+                    <section style="display: flex; flex-direction: column;">
+                        <div>
+                            <input type="checkbox">
+                            <span>Telefone</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>E-mail</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>SMS</span>
+                        </div>
+                    </section>
+                </fieldset>
+
+                <fieldset>
+                    <legend style="font-weight: bold;">Informações de login</legend>
+
+                    <input type="text" name="usuario" placeholder="Usuário"required>
+
+                    <input type="password" name="senha1" placeholder="Senha"required>
+
+                    <input type="password" name="senha2" placeholder="Repita a senha" required>
+
+                    <section style="display: flex; align-items: center;">
+                        <div style="margin-right: 1rem;">
+                            <input type="checkbox" name="termos" id="t" style="width: 1.5rem; height: 1.5rem">
+                            <span for="t">Termos de uso</span>
+                        </div>
+                    </section>
+                </fieldset>
+
+                <fieldset>
+                    <legend style="font-weight: bold;">Preferências</legend>
+
+                    <div style="display: flex; align-items: center; flex-direction: column;">
+                        <label>Cor predileta</label>
+                        <input type="color" name="cor" placeholder="Cor predileta">
+                    </div>
+
+                    <section style="display: flex; flex-direction: column;">
+                        <div>
+                            <input type="checkbox">
+                            <span>Bebida e comida</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>Roupas</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>Aparelhos eletronicos</span>
+                        </div>
+                    </section>
+                    <div style="display: flex; align-items: center; flex-direction: column;">
+                        <label>Preferencia de compra em: </label>
+                        <input type="month" name="mes" placeholder="mes"
+                            style="width: 20rem; height: 2rem; font-size: 1.5rem;">
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <div style="display: flex; flex-direction: row; align-items: stretch; justify-content: space-around; width: 100vw;">
+                <button type="reset">Limpar</button>
+                <button type="submit"><a href="sucesso.html" style="">Salvar</a></button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

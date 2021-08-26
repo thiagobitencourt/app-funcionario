@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+
+    .icone-menu {
+      width: 35px;
+      height: auto;
+    }
+
+    .imagem-logo {
+      width: 240px;
+      height: auto;
+    }
+
+    .imagem-usuario {
+      width: 40px;
+      height: auto;
+    }
+
+    header {
+      box-shadow: 0px 2px 5px #c3c3c3;
+      padding: 20px 0;
+    }
+
+    .flex-header {
+      /* height: 100vh; */
+      display: flex;
+      /* flex-direction: column-reverse; */
+      /* flex-direction: row; */
+
+      flex-wrap: nowrap;
+
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: space-between; */
+      /* justify-content: space-evenly; */
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .red {
+      background-color: rgb(245, 136, 121);
+    }
+
+    .blue {
+      background-color: rgb(56, 56, 253);
+    }
+
+    .green {
+      background-color: rgb(57, 173, 57);
+    }
+
+    .purple {
+      background-color: rgb(185, 56, 185);
+    }
+
+    .main-flex div {
+      padding: 20px;
+      color: white;
+    }
+
+    .main-flex {
+      margin: 20px;
+      border: 1px solid #c3c3c3;
+
+      display: flex;
+      flex-direction: row;
+      height: 600px;
+
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+
+    .usuario-flex {
+      display: flex;
+      align-items: center;
+    }
+
+    /* MENU */
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #757575;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      color:rgb(185, 56, 185);
+    }
+
+  </style>
+
+</head>
+<body>
+  <header >
+    <div class="flex-header">
+      <div class="primeiro-item">
+        <img class="icone-menu" src="../assets/squared-menu.png" alt="Icone de menu">
+      </div>
+  
+      <img class="imagem-logo" src="../prova/colab-logo.png" alt="Colab">
+      
+      <div class="usuario-flex">
+        <img class="imagem-usuario" src="../prova/usuario.png" alt="Usuário">
+        <strong style="margin-left: 5px;">Fulano de tal</strong>
+        <em style="margin-left: 5px;">Estagiário Senior</em>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="">Inicio</a>
+      <a href="">Blog</a>
+      <a href="">Noticias</a>
+      <a href="">Sobre mim</a>
+      <a href="">Contato</a>
+    </nav>
+
+  </header>
+
+  <main class="main-flex">
+
+    <div class="red">
+      Vermelho
+    </div>
+    <div class="blue">
+      <p>
+        Azul
+      </p>
+    </div>
+    <div class="green">
+      Verde
+    </div>
+    <div class="purple">
+      <p>
+        Roxo
+      </p>
+    </div>
+
+    <div class="blue">
+      <p>
+        Azul
+      </p>
+    </div>
+    <div class="green">
+      Verde
+    </div>
+    <div class="purple">
+      <p>
+        Roxo
+      </p>
+    </div>
+    <div class="red">
+      Vermelho
+    </div>
+
+    <div class="purple">
+      <p>
+        Roxo
+      </p>
+    </div>
+    <div class="red">
+      Vermelho
+    </div>
+    <div class="blue">
+      <p>
+        Azul
+      </p>
+    </div>
+    <div class="green">
+      Verde
+    </div>
+
+  </main>
+  <footer></footer>
+
+</body>
+</html>

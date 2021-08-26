@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+
+<body>
+    <form action="Sucesso.html"></form>
+    <h3>Cadastrar Cliente</h3>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <p>
+            <label for="id"></label>
+            <input type="hidden" name="id">
+            <hr>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required autofocus>
+            <hr>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text">
+            <hr>
+            <label for="dataNasc">Data de nascimento</label>
+            <input type="date" name="dataNasc" id="dataNasc" required>
+            <hr>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" minlength="18">
+            <hr>
+            <label for="sexo">Sexo :</label>
+            <label for="masculino">M</label>
+            <input type="radio" name="sexo" id="sexo" value="Masculino">
+            <label for="feminino">F</label>
+            <input type="radio" name="sexo" id="sexo" value="Feminino">
+            <hr>
+            <label for="FotoPerfil">Foto de Perfil</label>
+            <input type="file" name="Perfil" id="Perfil">
+        </p>
+    </fieldset>
+    <section>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="Endereço">Endereço</label>
+            <input type="text" name="Endereço" id="Endereço" required>
+            <hr>
+            <label for="numero">Numero da casa</label>
+            <input type="number" name="numero" id="numero">
+            <hr>
+            <label for="Complemento">Complemento</label>
+            <input type="text">
+            <hr>
+            <label for="Cidade">Cidade</label>
+            <select name="select" id="select" required>
+                <option value="a">Cidade aqui</option>
+                <option value="Tubarão">Tubarão</option>
+                <option value="Aqui">aqui</option>
+                <option value="ali">ali</option>
+            </select>
+            <hr>
+            <label for="Estado">Estado</label>
+            <select name="selecionar" id="selecionar" aria-readonly="true">
+                <option value="SC">SC</option>
+                <option value="la">Lá</option>
+                <option value="Longe">Longe</option>
+            </select>
+        </fieldset>
+    </section>
+    <section>
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="Telefone">Telefone</label>
+            <input type="tel" name="Telefone" id="Telefone">
+            <hr>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email">
+            <hr>
+            <label for="Site">Site</label>
+            <input type="url" name="Site" id="Site">
+            <hr>
+            <label for="receive">Receber Informações sobre Promoções ? :</label>
+            <label for="s">Sim</label>
+            <input type="checkbox" name="sim" id="sim">
+            <label for="n">Nao</label>
+            <input type="checkbox" name="nao" id="nao">
+        </fieldset>
+    </section>
+    <section>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">Nome de usuário :</label>
+            <input type="text" name="usuario" id="usuario">
+            <hr>
+            <label for="senha">Senha :</label>
+            <input type="password" name="senha" id="senha">
+            <hr>
+            <label for="senha">Repetir a senha :</label>
+            <input type="password" name="senha" id="senha">
+            <hr>
+            <label for="termosdeuso">Aceitar os termons de uso</label>
+            <label for="s">Sim</label>
+            <input type="checkbox" name="sim" id="sim">
+            <label for="n">Nao</label>
+            <input type="checkbox" name="nao" id="nao">
+
+        </fieldset>
+    </section>
+    <section>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label for="cor">Cor favorita :</label>
+            <input type="color" name="" id="">
+            <hr>
+            <label for="Itens">Itens preferidos :</label>
+            <label for="comida">Comida</label>
+            <input type="checkbox" name="comida" id="comida">
+            <label for="armas">Armas</label>
+            <input type="checkbox" name="armas" id="armas">
+            <label for="material">Material</label>
+            <input type="checkbox" name="material" id="material">
+            <hr>
+            <label for="mes">Qual mes do ano mais gosta de comprar :</label>
+            <input type="month" name="mes" id="mes">
+        </fieldset>
+    </section>
+    <section>
+    <label for="Salvar">Salvar</label>
+    <input type="submit" value="Salvar">
+    <label for="Limpar">Limpar</label>
+    <input type="reset" value="Limpar">
+</section>
+</form>
+</body>
+
+
+</html>

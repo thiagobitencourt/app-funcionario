@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<form action="./Sucesso.html">
+    <h1>Formulário</h1>
+
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+       
+        <input type="hidden" id="senha" name="Identificador">
+
+        <label for="nome">Nome:    </label >
+        <input type="text" id="nome" name="name" required autofocus><br>
+        
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="name2" ><br>
+
+        <label for="data">Data de nascimento:</label>
+        <input type="date" id="data" name="happyB" required><br>
+
+        <label for="Idade">Idade:</label>
+        <input type="number" id="Idade" name="anos" min="18" ><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="M" name="Sexo" required>M
+        <input type="radio" id="F" name="Sexo" required>F
+        <input type="radio" id="O" name="Sexo" required>O<br>
+        
+        <label for="foto">Adicione uma foto de perfil:</label>
+        <input type="file" id="foto" name="fotoperfil">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de endereço</legend>
+        
+        <label for="Endereço">Endereço</label>
+        <input type="text" id="Endereço" name="rua" required><br>
+
+        <label for="casanumero">Numero da casa:</label>
+        <input type="number" id="casanumero" name="casa"><br>
+
+        <label for="Complemento">Complemento:</label>
+        <input type="text" id="Complemento" name="Complement"><br>
+        
+        <label for="Cidade">Cidade:</label>
+        <select id="Cidade" name="Cidade" required>
+            <option value="Laguna">Laguna</option>
+            <option value="Tubarao">Tubarão</option>
+            <option value="Florianopolis">Florianopolis</option>
+            <option value="Criciuma">Criciuma</option>
+        </select><br>
+
+        <label for="Estado">Estado:</label>
+        <input type="text" id="Estado" name="Estado" value="SC" readonly>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Informações de contato </legend>
+
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" id="Telefone" name="Telefone" required><br>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email"><br>
+
+        <label for="SiteP">Site pessoal:</label>
+        <input type="url" id="SiteP" name="SitePessoal"><br>
+        
+        Escolhea as formas para receber informações de promoção<br>
+        <label for="SMS">SMS:</label>
+        <input type="checkbox" id="SMS" name="SMS">
+
+        <label for="E-mail">E-mail:</label>
+        <input type="checkbox" id="E-mail" name="E-mail">
+
+        <label for="Whats">WhatsApp:</label>
+        <input type="checkbox" id="Whats" name="Whats"><br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Informações de login do usuario</legend>
+
+        <label for="nomedeusuario">Nome de usuario:    </label>
+        <input type="text" id="nomedeusuario" name="nomedeusuario" ><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" ><br>
+
+        <label for="senhadnv">Repetir a senha:    </label>
+        <input type="password" id="senhadnv" name="senhadnv" ><br>
+
+        <label for="Termo">Aceitar termos de uso:</label>
+        <input type="checkbox" id="Termos" name="Termos" required><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Opções de sua preferencia</legend>
+
+        <label for="Cor">Cor favorita:</label>
+        <input type="color" id="Cor" name="Cor" ><br>
+        
+        Quais itens voce mais gosta de comprar?<br>
+        <label for="Tecnolgia">Tecnolgia:</label>
+        <input type="checkbox" id="Tecnolgia" name="Tecnolgia">
+
+        <label for="Roupa">Roupa:</label>
+        <input type="checkbox" id="Roupa" name="Roupa">
+
+        <label for="Livro">Livros:    </label>
+        <input type="checkbox" id="Livro" name="Livro"><br>
+        
+        <label for="mes">Qual mes voce mais gosta de comprar?:</label><br>
+        <input type="month" id="mes" name="mes"><br>
+
+        <input type="submit" value="Salvar"><br>
+        <input type="reset" value="Limpar">
+    </fieldset>
+
+</form>
+</body>
+</html>
