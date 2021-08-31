@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <section>
+            <figure>
+                <img src="./colab-logo.png" alt="Logo com a palavra colab escrita nele." height="40px" width="140px">
+            </figure>
+        </section>
+        <section>
+            <figure>
+                <img src="./usuario.png" alt="Imagem padrão de usuario." height="40px" width="40px">
+            </figure>
+            <span id="nome-usuario"><b>Joacyr</b></span>
+            <span id="cargo-usuario"><i>Super Administrador</i></span>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./">Funcionários</a></li>
+                    <li><a href="./novo-funcionario.html">Novo Funcionário</a></li>
+                    <li><a href="./enviar-email.html">Enviar Email</a></li>
+                    <li><a href="./sair.html">Sair</a></li>
+                </ul>
+            </nav>
+        </section>
+    </head>
+    <main>
+        <section>
+            <h3>Enviar email</h3>
+        </section>
+        <hr>
+        <section>
+            <p>
+                Selecione um <strong>funcionário</strong> para <em>enviar</em> um email
+            </p>
+        </section>
+        <section>
+            <form action="./enviado.html" method="GET">
+                <fieldset>
+                    <legend></legend>
+                    <div>
+                        <label for="input-funcionario">Funcionário:</label>
+                        <input type="text" name="funciionario" required id="input-funcionario">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="input-email">
+                    </div>
+                    <div>
+                        <label for="textarea-texto">Texto:</label>
+                        <textarea name="texto" id="textarea-texto" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <button>Enviar</button>
+                    <input type="reset" value="Cancelar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <figure>
+                <img src="./colab-logo.png" alt="Logo com a palavra colab escrita nele." height="20px" width="100px">
+            </figure>
+        </section>
+        <section>
+            <p>
+                <strong>Colab</strong> <mark>- todas as informações dos seus colaboradores na palma da sua mão.</mark>
+            </p>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./">Funcionários</a></li>
+                    <li><a href="./novo-funcionario.html">Novo Funcionário</a></li>
+                    <li><a href="./enviar-email.html">Enviar Email</a></li>
+                    <li><a href="./sair.html">Sair</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

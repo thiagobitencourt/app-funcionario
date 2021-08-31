@@ -1,0 +1,54 @@
+
+<app-usuario-logado usuario="Thiago"></app-usuario-logado>
+
+<hr/>
+<table class="funcionarios">
+  <thead>
+    <th>Nome</th>
+    <th>Filial</th>
+    <th>Data de adminssão</th>
+    <th>Cargo</th>
+    <th>Salário</th>
+    <th>Detalhes</th>
+    <th>Ajustar salário</th>
+    <th>Remover</th>
+  </thead>
+  <tbody>
+    <tr class="table-row" *ngFor="let funcionario of funcionarios" (click)="selecionarFuncionario(funcionario)">
+      <td>{{ funcionario.nome | titlecase }}</td>
+      <td>{{ funcionario.filial | filial:true }}</td>
+      <td>{{ funcionario.dataAdmissao | date:'dd/MM/yyyy' }}</td>
+      <td>{{ funcionario.cargo }}</td>
+      <td>{{ funcionario.salario | currency:'BRL' }}</td>
+      <td class="detalhes" (click)="verDetalhes(funcionario)">Ver detalhes</td>
+      <td (click)="ajustarSalario(funcionario)">Ajustar salário</td>
+      <td (click)="removerFuncionario(funcionario)">Remover</td>
+    </tr>
+  </tbody>
+</table>
+
+<app-usuario-logado [usuario]="nomeUsuarioLogado"></app-usuario-logado>
+
+<div>
+  <button (click)="removerUltimoFuncionario()" type="button">Remover ultimo funcionario</button>
+  <button style="margin-left: 5px" (click)="adicionarFuncionario()" type="button">Adicionar</button>
+</div>
+<hr/>
+
+<!-- <div *ngIf="funcionarioSelecionado">
+  <b>Funcionário selecionado: </b><span> {{ funcionarioSelecionado?.nome }}</span>
+  <p style="color: red; cursor: pointer" (click)="funcionarioSelecionado = undefined">Deselecionar funcionário</p>
+</div> -->
+
+<!-- Property binding -->
+<div *ngIf="funcionarioSelecionado">
+  <app-funcionario
+    (deselecionarFuncionario)="deselecionarFuncionario()"
+    [funcionario]="funcionarioSelecionado"
+  ></app-funcionario>
+</div>
+
+<hr/>
+<div [class]="classeLink">
+  <a [href]="linkPaginaNoticia" target="_blank">Noticias</a>
+</div>

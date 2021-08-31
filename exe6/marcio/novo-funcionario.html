@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <section>
+            <figure>
+                <img src="./colab-logo.png" alt="Logo com a palavra colab escrita nele." height="40px" width="140px">
+            </figure>
+        </section>
+        <section>
+            <figure>
+                <img src="./usuario.png" alt="Imagem padrão de usuario." height="40px" width="40px">
+            </figure>
+            <span id="nome-usuario"><b>Joacyr</b></span>
+            <span id="cargo-usuario"><i>Super Administrador</i></span>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./">Funcionários</a></li>
+                    <li><a href="./novo-funcionario.html">Novo Funcionário</a></li>
+                    <li><a href="./enviar-email.html">Enviar Email</a></li>
+                    <li><a href="./sair.html">Sair</a></li>
+                </ul>
+            </nav>
+        </section>
+    </head>
+    <main>
+        <section>
+            <h3>Cadastro de funcionário</h3>
+        </section>
+        <hr>
+        <section>
+            <form action="./cadastro.html" method="POST">
+                <fieldset>
+                    <legend></legend>
+                    <div>
+                        <label for="input-nome">Nome:</label>
+                        <input type="text" name="nome" required maxlength="20" id="input-nome">
+                    </div>
+                    <div>
+                        <label for="input-sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" required maxlength="20" id="input-sobrenome">
+                    </div>
+                    <div>
+                        <label for="select-filial">Filial:</label>
+                        <select name="filial" required id="select-filial">
+                            <option value="Aquela Filial">Aquela Filial</option>
+                            <option value="Outra Filial">Outra Filial</option>
+                            <option value="Essa filial mesmo">Essa filial mesmo</option>
+                            <option value="Mano">Mano</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="input-cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="input-cidade" readonly value="Tubarão">
+                    </div>
+                    <div>
+                        <label for="input-cargo">Cargo:</label>
+                        <input list="cargos" name="cargo" id="input-cargo">
+                        <datalist id="cargos">
+                            <option value="engenheiro"></option>
+                            <option value="administador"></option>
+                            <option value="gerente"></option>
+                            <option value="estagiario"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="input-data-de-admissao">Data de Admissão:</label>
+                        <input type="date" name="data-de-admissao" id="input-data-de-admissao">
+                    </div>
+                    <div>
+                        <label for="input-salario">Salário:</label>
+                        <input type="number" name="salario" min="1000" max="20000" id="input-salario">
+                    </div>
+                </fieldset>
+                <div>
+                    <button>Salvar</button>
+                    <input type="reset" value="Limpar">
+                    <button type="button">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <figure>
+                <img src="./colab-logo.png" alt="Logo com a palavra colab escrita nele." height="20px" width="100px">
+            </figure>
+        </section>
+        <section>
+            <p>
+                <strong>Colab</strong> <mark>- todas as informações dos seus colaboradores na palma da sua mão.</mark>
+            </p>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./">Funcionários</a></li>
+                    <li><a href="./novo-funcionario.html">Novo Funcionário</a></li>
+                    <li><a href="./enviar-email.html">Enviar Email</a></li>
+                    <li><a href="./sair.html">Sair</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

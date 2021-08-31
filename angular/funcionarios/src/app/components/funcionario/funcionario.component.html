@@ -1,0 +1,15 @@
+<p>
+  <b>Nome do funcionário: </b>
+  <span>{{ funcionario?.nome }}</span>
+</p>
+<p>
+  <b>Cargo: </b>
+  <span>{{ funcionario?.cargo }}</span>
+</p>
+<p>
+  <b>Filial: </b>
+  <span>{{ funcionario?.filial | filial }}</span>
+</p>
+<p>
+  <button (click)="deselecionar()" type="button">Deselecionar</button>
+</p>

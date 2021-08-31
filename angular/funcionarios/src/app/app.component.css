@@ -1,0 +1,18 @@
+.funcionarios .detalhes {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.funcionarios .detalhes:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.funcionarios .table-row {
+  padding: 10px 0;
+}
+
+.funcionarios .table-row:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+}
