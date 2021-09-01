@@ -1,0 +1,10 @@
+<div>
+  <p *ngIf="usuario">
+    <b>Usuário: </b>
+    <span>{{ usuario?.nome }}</span> | 
+    <span>{{ usuario?.email }}</span>
+  </p>
+  <button (click)="autenticar()" type="button">
+    {{ usuario ? 'Sair' : 'Fazer login' }}
+  </button>
+</div>

@@ -6,6 +6,7 @@ export class Cargo {
 }
 
 export interface Funcionario {
+  id?: number;
   nome: string | number;
   filial: EnumFilial;
   dataAdmissao: Date;

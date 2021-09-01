@@ -1,0 +1,35 @@
+// Ir na backend e validar os dados do usuário
+    /*
+      GET
+        - Obter alguma coisa do backend,
+          posso passar parametros que vai ser enviado na URL
+      POST
+        - Enviar dados para o backend
+          os dados são enviado no "corpo" da requisição
+          (vão "escondidos", não ta na URL)
+
+      PUT
+        - ALTERAR alguma informação no backend
+          posso enviar dados para o backend que vão ser enviado
+          no "corpo" da requisição igual o post
+      DELETE
+        - Remover alguma coisa do backend
+
+      CRUDL
+        Create POST
+        Read GET
+        Update PUT
+        Delete DELETE
+        List GET || POST (depende dos parametros que eu vou passar)
+
+
+      http://localhost:3000/usuarios
+        - POST, objeto, salva esse objeto
+        - GET, retornar todos os usuarios
+      
+      http://localhost:3000/usuarios/150
+        - GET - Vai retorna o usuario com id 150
+        - PUT - (alterar), passar no corpo 
+          os novos dados para o usuario com id 150
+        - DELETE - Remover o usuario com id 150
+    */

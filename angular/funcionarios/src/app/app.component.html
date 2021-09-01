@@ -1,7 +1,5 @@
+<app-usuario></app-usuario>
 
-<app-usuario-logado usuario="Thiago"></app-usuario-logado>
-
-<hr/>
 <table class="funcionarios">
   <thead>
     <th>Nome</th>
@@ -27,21 +25,13 @@
   </tbody>
 </table>
 
-<app-usuario-logado [usuario]="nomeUsuarioLogado"></app-usuario-logado>
-
 <div>
   <button (click)="removerUltimoFuncionario()" type="button">Remover ultimo funcionario</button>
   <button style="margin-left: 5px" (click)="adicionarFuncionario()" type="button">Adicionar</button>
 </div>
-<hr/>
 
-<!-- <div *ngIf="funcionarioSelecionado">
-  <b>Funcionário selecionado: </b><span> {{ funcionarioSelecionado?.nome }}</span>
-  <p style="color: red; cursor: pointer" (click)="funcionarioSelecionado = undefined">Deselecionar funcionário</p>
-</div> -->
-
-<!-- Property binding -->
 <div *ngIf="funcionarioSelecionado">
+  <hr/>
   <app-funcionario
     (deselecionarFuncionario)="deselecionarFuncionario()"
     [funcionario]="funcionarioSelecionado"
@@ -49,6 +39,6 @@
 </div>
 
 <hr/>
-<div [class]="classeLink">
+<div>
   <a [href]="linkPaginaNoticia" target="_blank">Noticias</a>
 </div>

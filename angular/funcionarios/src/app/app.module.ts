@@ -4,11 +4,13 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FilialPipe } from './pipes/filial.pipe';
 import { FuncionarioComponent } from './components/funcionario/funcionario.component';
-
+import { AutenticacaoService } from './services/autenticacao.service';
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
-import { UsuarioLogadoComponent } from './components/usuario-logado/usuario-logado.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { HttpClientModule } from '@angular/common/http';
+
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
@@ -16,12 +18,14 @@ registerLocaleData(localePt, 'pt');
     AppComponent,
     FilialPipe,
     FuncionarioComponent,
-    UsuarioLogadoComponent
+    UsuarioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [
+    AutenticacaoService,
     {
       provide: LOCALE_ID,
       useValue: 'pt-BR'

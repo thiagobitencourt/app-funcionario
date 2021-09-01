@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { EnumFilial } from './model/filial.enum';
 import { Funcionario } from './model/funcionario';
+import { AutenticacaoService } from './services/autenticacao.service';
+import { FuncionarioService } from './services/funcionario.service';
 
 @Component({
   selector: 'app-root',
@@ -8,38 +10,18 @@ import { Funcionario } from './model/funcionario';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  nomeUsuarioLogado = 'MArcos paulo';
-
-  /*
-    string
-    number
-    boolean
-    any -> qualquer um
-    void -> vazio
-
-    Object -> Interface, Enum, Class
-    Array/Lista -> Depende do tipo da lista
-    Function
-  */
-
-  funcionarios: Funcionario[] = []; // Array<number> - É uma má prática, prefira number[]
-
+  funcionarios: Funcionario[] = [];
   funcionarioSelecionado: Funcionario;
   linkPaginaNoticia: string;
-  classeLink: string = 'link-pagina-noticia';
 
-  constructor() {
+  // Precisa declara o serviço no contrutor
+  constructor(private funcionarioService: FuncionarioService) {
     this.funcionarios = this.obterFuncionarios();
   }
 
   selecionarFuncionario(funcionario: Funcionario) {
     this.funcionarioSelecionado = funcionario;
-
-    funcionario.ferias = true;
-
     this.linkPaginaNoticia = 'http://globo.com';
-    this.classeLink = 'link-funcionario-selecionado';
   }
 
   deselecionarFuncionario() {
@@ -47,22 +29,35 @@ export class AppComponent {
   }
 
   verDetalhes(funcionario: Funcionario) {
-    alert('Funcionário: ' + funcionario.nome + ' admitido em ' + funcionario.dataAdmissao);
+    alert('Funcionário: ' + funcionario.nome);
   }
 
   adicionarFuncionario() {
-    this.funcionarios.push({
+    // criar o objeto Funcionario e chamar o método
+    // adicionarFuncionario(funcionario) do serviço
+
+    const novoFuncionario = {
       nome: 'Lula',
       filial: EnumFilial.FILIAL_C,
       dataAdmissao: new Date('25/01/2002'),
       cargo: 'Presidente',
       salario: 10000
-    });
+    };
+
+    this.funcionarioService.adicionarFuncionario(novoFuncionario)
+      .subscribe((funcionario: Funcionario) => {
+        // Quando retornar - depois que salvou no backend
+        this.funcionarios.push(funcionario);
+      });
   }
 
   removerFuncionario(funcionario: Funcionario) {
     const indiceFuncionario = this.funcionarios.indexOf(funcionario);
     this.funcionarios.splice(indiceFuncionario, 1);
+
+    // this.funcionarioService.removerFuncionario(funcionario.id)
+      // .subscribe(())
+      // quando voltar do backend - remover o funcionario da lista
   }
 
   removerUltimoFuncionario() {
