@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Usuario } from 'src/app/model/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
@@ -23,7 +24,10 @@ export class UsuarioFormComponent implements OnInit {
 
   usuarioForm: FormGroup; // undefined
 
-  constructor(private usuarioService: UsuarioService) {}
+  constructor(
+    private router: Router,
+    private usuarioService: UsuarioService
+  ) {}
 
   ngOnInit(): void {
     // this.campoInpuTexto = new FormControl('Valor inicial para o campo');
@@ -64,8 +68,9 @@ export class UsuarioFormComponent implements OnInit {
 
       this.usuarioService.salvarUsuario(usuario)
         .subscribe(() => {
-          alert('Usuario cadastrado com sucesso!');
-          this.usuarioForm.reset();
+          // alert('Usuario cadastrado com sucesso!');
+          // this.usuarioForm.reset();
+          this.router.navigate(['usuario']);
         });
     } else {
       console.error('Formulário inválido');

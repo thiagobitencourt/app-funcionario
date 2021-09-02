@@ -12,6 +12,9 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioFormComponent } from './components/usuario-form/usuario-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { ListaFuncionariosComponent } from './components/lista-funcionarios/lista-funcionarios.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -21,13 +24,30 @@ registerLocaleData(localePt, 'pt');
     FilialPipe,
     FuncionarioComponent,
     UsuarioComponent,
-    UsuarioFormComponent
+    UsuarioFormComponent,
+    ListaFuncionariosComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {
+        path: 'cadastro-usuario', component: UsuarioFormComponent
+      },
+      {
+        path: 'usuario', component: UsuarioComponent
+      },
+      {
+        path: 'funcionarios',
+        component: ListaFuncionariosComponent
+      },
+      {
+        path: '**', component: ListaFuncionariosComponent
+      }
+    ])
   ],
   providers: [
     AutenticacaoService,

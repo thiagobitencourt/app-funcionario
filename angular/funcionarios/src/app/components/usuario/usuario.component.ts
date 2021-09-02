@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Usuario } from 'src/app/model/usuario';
 import { AutenticacaoService } from 'src/app/services/autenticacao.service';
 
@@ -10,11 +11,19 @@ import { AutenticacaoService } from 'src/app/services/autenticacao.service';
 export class UsuarioComponent implements OnInit {
   usuario: Usuario; // undefined
 
-  constructor(private autenticacao: AutenticacaoService) {}
+  constructor(
+    private router: Router,
+    private autenticacao: AutenticacaoService
+  ) {}
   
   ngOnInit(): void {
     // Quando o componente for inicializado
     this.usuario = this.autenticacao.obterUsuarioLogado();
+  }
+
+  cadastrarUsuario() {
+    // Mudar pra uma nova rota, página
+    this.router.navigate(['cadastro-usuario']);
   }
 
   autenticar() {
