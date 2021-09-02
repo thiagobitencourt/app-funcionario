@@ -1,10 +1,10 @@
 import { EnumFilial } from "./filial.enum";
 
 export interface Usuario {
-  id: number;
+  id?: number;
   nome: string;
   sobrenome: string;
   email: string;
   filial: EnumFilial;
-  senha: string;
+  senha?: string;
 }

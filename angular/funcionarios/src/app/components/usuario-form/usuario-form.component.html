@@ -1,0 +1,62 @@
+
+<!-- Data binding -->
+<!-- Two way data binding -->
+<!--  [(ngModel)]  -->
+<!-- <input [(ngModel)]="texto" type="text" placeholder="Texto aqui">
+<p>
+  {{ texto }}
+</p>
+<button (click)="mudarTexto()">Mudar texto</button>
+-->
+  <!--
+    <input type="text" [formControl]="campoInpuTexto" placeholder="Coloque aqui o seu texto">
+  <p>
+    <input type="number" [formControl]="campoInpuNumero" placeholder="Coloque aqui o seu numero">
+  </p>
+
+  <p>
+    {{ campoInpuTexto.value }}
+  </p>
+  <button (click)="salvar()">Salvar</button>
+  <button (click)="mudarTexto()">Mudar texto</button>
+-->
+
+<form [formGroup]="usuarioForm" (ngSubmit)="salvar()" autocomplete="off">
+  <p>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" formControlName="nome" required>
+    <span *ngIf="usuarioForm.get('nome').invalid"> Campo inválido </span>
+  </p>
+
+  <p>
+    <label for="sobrenome">Sobrenome: </label>
+    <input type="text" id="sobrenome" formControlName="sobrenome">
+  </p>
+
+  <p>
+    <label for="email">Email: </label>
+    <input type="email" id="email" formControlName="email">
+    <span *ngIf="usuarioForm.get('email').invalid"> Campo inválido </span>
+  </p>
+
+  <p>
+    <label for="filial">Filial: </label>
+    <select formControlName="filial" id="filial">
+      <option value="MATRIZ">Matriz</option>
+      <option value="FILIAL_A">Filial a</option>
+      <option value="FILIAL_B">Filial b</option>
+      <option value="FILIAL_C">Filial c</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="sn">Senha: </label>
+    <input type="password" id="sn" formControlName="senha">
+    <span *ngIf="usuarioForm.get('senha').invalid"> Campo inválido </span>
+  </p>
+
+  <button type="submit" [disabled]="usuarioForm.invalid" >Salvar</button>
+  <button type="button" (click)="verValores()">Ver valores</button>
+  <button type="button" (click)="mudarValores()">Mudar valores</button>
+  <button type="reset">Limpar</button>
+</form>

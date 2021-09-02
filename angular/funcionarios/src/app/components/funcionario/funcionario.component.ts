@@ -15,6 +15,8 @@ export class FuncionarioComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnInit(): void {
     console.log('Componente foi inicializado!');
+    // Chamar o serviço pra obter os dados do funcionario
+    // Passa o id aqui
   }
 
   ngOnChanges(valueChanged) {

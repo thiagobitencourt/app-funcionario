@@ -62,9 +62,25 @@
       "id": 1,
       "nome": "Jaiminho",
       "sobrenome": "Carteiro",
-      "email": "jaiminho@correios.com.br",
+      "email": "jaiminho@correios.com",
       "filial": "MATRIZ",
       "senha": "admin"
+    },
+    {
+      "nome": "Thiago",
+      "sobrenome": "Bitencourt",
+      "email": "thiago.bitencourt@triersistemas.com.br",
+      "filial": "FILIAL_A",
+      "senha": "asdasdsadsadsa",
+      "id": 2
+    },
+    {
+      "nome": "Moacyr",
+      "sobrenome": "Luiz",
+      "email": "moa.lui@eu.com.br",
+      "filial": "MATRIZ",
+      "senha": "sçldjaslkjdsaçl",
+      "id": 3
     }
   ]
 }

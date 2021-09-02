@@ -8,12 +8,8 @@ import { Funcionario } from '../model/funcionario';
 })
 export class FuncionarioService {
   // Importar o módulo HttpClientModule no arquivo app.module.ts
-  // HttpClientModule -> 
-  // import { HttpClientModule } from '@angular/common/http';
-  // HttpCliente ->
-  // import { HttpClient } from '@angular/common/http';
   constructor(private http: HttpClient) {}
-
+  // github/thiagobitencourt/app-funcionario
   /*
   // Altere a interface funcionario para ter o atributo id
   obterFuncionarios(): Observable<Funcionario[]> {

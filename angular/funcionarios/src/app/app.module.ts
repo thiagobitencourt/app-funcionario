@@ -10,6 +10,8 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UsuarioFormComponent } from './components/usuario-form/usuario-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 registerLocaleData(localePt, 'pt');
 
@@ -18,11 +20,14 @@ registerLocaleData(localePt, 'pt');
     AppComponent,
     FilialPipe,
     FuncionarioComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    UsuarioFormComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AutenticacaoService,
